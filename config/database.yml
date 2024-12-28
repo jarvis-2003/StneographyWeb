@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  # database: /dev/null
+  database: ""
 
 test:
   <<: *default
-  # database: /dev/null
+  database: ""
 
 production:
   <<: *default
-  # database: /dev/null
+  database: ""
