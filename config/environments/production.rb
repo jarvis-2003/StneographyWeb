@@ -41,7 +41,11 @@ Rails.application.configure do
 
 
 
-  config.require_master_key = true
+  config.require_master_key = true if Rake.application.top_level_tasks.exclude?("assets:precompile")
+
+  # or even if you need to run `assets:clean` without a key
+
+  config.require_master_key = true if Rake.application.top_level_tasks.none? { |task| task.start_with?("assets:") }
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
