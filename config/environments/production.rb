@@ -86,7 +86,6 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
-  config.active_record.migration_error = :page_load
   config.active_record.database = false # Skip ActiveRecord (database-related) features
 
 
