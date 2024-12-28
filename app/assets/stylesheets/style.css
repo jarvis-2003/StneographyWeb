@@ -1,0 +1,24 @@
+.image-animation{
+    position: absolute;
+    z-index:-12;
+}
+.outer-con-animation{
+    height:200px;
+    width:200px ;
+    position: absolute;
+    top:113px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.output-area{
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.out-con{
+    height:90vh;
+    
+}
