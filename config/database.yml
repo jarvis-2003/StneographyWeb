@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: ""
+  database: ":memory:"  # In-memory database (temporary)
 
 test:
   <<: *default
-  database: ""
+  database: ":memory:"  # In-memory database (temporary)
 
 production:
   <<: *default
-  database: ""
+  database: ":memory:"  # In-memory database (temporary)
